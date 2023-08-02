@@ -31,7 +31,7 @@ sequelize db:migrate
 sequelize db:migrate:undo:all
 
 # create seed
-sequelize seed:generate --name seed-appointment
+sequelize seed:generate --name seed-CardTask
 
 # execute seed
 sequelize db:seed:all
