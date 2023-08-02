@@ -2,34 +2,28 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("tasks", {
+    await queryInterface.createTable("CardTasks", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      user_id: {
+      card_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {
-          model: "users",
+          model: "cards",
           key: "id",
         },
       },
-      description: {
+      task_id: {
         allowNull: false,
-        type: Sequelize.STRING,
-      },
-      limit_date: {
-        type: Sequelize.DATE,
-      },
-      limit_time: {
-        type: Sequelize.TIME,
-      },
-      is_completed: {
-        allowNull: false,
-        type: Sequelize.ENUM("yes", "no"),
+        type: Sequelize.INTEGER,
+        references: {
+          model: "tasks",
+          key: "id",
+        },
       },
       createdAt: {
         allowNull: false,
@@ -42,6 +36,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("tasks");
+    await queryInterface.dropTable("CardTasks");
   },
 };

@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
 
       //card {n} -- {n} task
       Card.belongsToMany(models.Task, {
-        through: "card_task",
+        through: "CardTask",
         as: "tasks",
         foreignKey: "card_id"
       })

@@ -19,6 +19,9 @@ sequelize model:generate --name Card --attributes "user_id:integer,type_id:integ
 # create Task model
 sequelize model:generate --name Task --attributes "user_id:integer,description:string,limit_date:date,limit_time:time,is_completed:enum:{yes,no}"
 
+# create CardTask model
+sequelize model:generate --name CardTask --attributes "card_id:integer,task_id:integer"
+
 #############################################################
 
 # execute migration
