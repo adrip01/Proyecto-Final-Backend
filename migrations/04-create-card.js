@@ -27,7 +27,16 @@ module.exports = {
       },
       title: {
         allowNull: false,
+        unique: true,
         type: Sequelize.STRING,
+      },
+      category: {
+        allowNull: false,
+        type: Sequelize.ENUM("resettable", "not_resettable"),
+      },
+      is_completed: {
+        allowNull: false,
+        type: Sequelize.ENUM("yes", "no"),
       },
       createdAt: {
         allowNull: false,

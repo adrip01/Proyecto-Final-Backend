@@ -17,8 +17,12 @@ module.exports = {
           key: "id",
         },
       },
-      first_name: {
+      user_name: {
         allowNull: false,
+        unique: true,
+        type: Sequelize.STRING,
+      },
+      first_name: {
         type: Sequelize.STRING,
       },
       last_name: {

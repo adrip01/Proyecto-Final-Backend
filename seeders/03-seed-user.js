@@ -11,6 +11,7 @@ module.exports = {
     await queryInterface.bulkInsert("users", [
       {
         role_id: 1, // admin
+        user_name: "pepo",
         first_name: "Admin",
         last_name: "Json",
         email: "admin@admin.com",
@@ -21,6 +22,7 @@ module.exports = {
       },
       {
         role_id: 2, // user
+        user_name: "pepo2",
         first_name: "Bob",
         last_name: "Bobson",
         email: "bob@bobson.com",

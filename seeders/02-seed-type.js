@@ -15,6 +15,11 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        type: "monthly",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
         type: "custom",
         createdAt: new Date(),
         updatedAt: new Date(),

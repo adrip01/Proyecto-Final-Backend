@@ -24,8 +24,8 @@ module.exports = (sequelize, DataTypes) => {
       Card.belongsToMany(models.Task, {
         through: "CardTask",
         as: "tasks",
-        foreignKey: "card_id"
-      })
+        foreignKey: "card_id",
+      });
     }
   }
   Card.init(
@@ -33,6 +33,8 @@ module.exports = (sequelize, DataTypes) => {
       user_id: DataTypes.INTEGER,
       type_id: DataTypes.INTEGER,
       title: DataTypes.STRING,
+      category: DataTypes.ENUM("resettable", "not_resettable"),
+      is_completed: DataTypes.ENUM("yes", "no"),
     },
     {
       sequelize,
