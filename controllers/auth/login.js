@@ -45,7 +45,7 @@ module.exports = async (req, res) => {
 
     const token = generateToken({
       userId: user.id,
-      userName: user.first_name,
+      userName: user.user_name,
       userRole: user.role.role,
     });
 
@@ -55,8 +55,7 @@ module.exports = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       status: "Error",
-      //   message: errorMsg.authentication.LOGINFAILED,
-      error: error.message,
+      message: errorMsg.authentication.LOGINFAILED,
     });
   }
 };
