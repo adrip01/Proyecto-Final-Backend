@@ -19,6 +19,12 @@ router.post("/create-card", verifyToken, userController.createCard);
 /* create task */
 router.post("/create-task", verifyToken, userController.createTask);
 
+/* find user Cards*/
+router.get("/user-cards", verifyToken, userController.findUserCards);
+
+/* find user Tasks*/
+router.get("/user-tasks", verifyToken, userController.findUserTasks);
+
 /* find user CardsTasks*/
 router.get("/user-cards-tasks", verifyToken, userController.findUserCardsTasks);
 
