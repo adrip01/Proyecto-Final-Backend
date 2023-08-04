@@ -6,5 +6,7 @@ userController.updateProfile = require("./updateProfile");
 userController.createCard = require("./createCard");
 userController.createTask = require("./createTask");
 userController.findUserCardsTasks = require("./findUserCardsTasks");
+userController.updateCard = require("./updateCard");
+userController.updateTask = require("./updateTask");
 
 module.exports = userController;

@@ -31,6 +31,13 @@ const errorMsg = {
     NOTFOUND: "Card not found",
     GETONE: "Error retreiving card",
   },
+
+  task: {
+    NOAUTH: "Don't have authorization",
+    REQUIERED: "User and type are required.",
+    NOTFOUND: "Task not found",
+    GETONE: "Error retreiving task",
+  },
 };
 
 const successMsg = {

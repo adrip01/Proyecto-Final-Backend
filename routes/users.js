@@ -22,4 +22,10 @@ router.post("/create-task", verifyToken, userController.createTask);
 /* find user CardsTasks*/
 router.get("/user-cards-tasks", verifyToken, userController.findUserCardsTasks);
 
+/* update my card*/
+router.post("/update-card/:id", verifyToken, userController.updateCard);
+
+/* update my task*/
+router.post("/update-task/:id", verifyToken, userController.updateTask);
+
 module.exports = router;
