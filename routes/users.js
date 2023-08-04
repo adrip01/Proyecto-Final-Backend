@@ -7,17 +7,25 @@ const router = express.Router();
 /* GET all users list as admin */
 router.get("/", verifyToken, isAdmin, userController.getAll);
 
-/* acces my profile as any role */
+//-------------------------------------------------------
+
+/* get my profile as any role */
 router.get("/profile", verifyToken, userController.userProfile);
 
-/* update my rpfoile as any role*/
+//-------------------------------------------------------
+
+/* update my profile as any role*/
 router.post("/update-profile", verifyToken, userController.updateProfile);
+
+//-------------------------------------------------------
 
 /* create card */
 router.post("/create-card", verifyToken, userController.createCard);
 
 /* create task */
 router.post("/create-task", verifyToken, userController.createTask);
+
+//-------------------------------------------------------
 
 /* find user Cards*/
 router.get("/user-cards", verifyToken, userController.findUserCards);
@@ -27,6 +35,16 @@ router.get("/user-tasks", verifyToken, userController.findUserTasks);
 
 /* find user CardsTasks*/
 router.get("/user-cards-tasks", verifyToken, userController.findUserCardsTasks);
+
+//-------------------------------------------------------
+
+/* find a Card */
+router.get("/card/:id", verifyToken, userController.getCard);
+
+/* find a Task */
+router.get("/task/:id", verifyToken, userController.getTask);
+
+//-------------------------------------------------------
 
 /* update my card*/
 router.post("/update-card/:id", verifyToken, userController.updateCard);

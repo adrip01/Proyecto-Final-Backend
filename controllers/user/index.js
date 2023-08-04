@@ -8,6 +8,8 @@ userController.createTask = require("./createTask");
 userController.findUserCards = require("./findUserCards");
 userController.findUserTasks = require("./findUserTasks");
 userController.findUserCardsTasks = require("./findUserCardsTasks");
+userController.getCard = require("./getCard");
+userController.getTask = require("./getTask");
 userController.updateCard = require("./updateCard");
 userController.updateTask = require("./updateTask");
 
