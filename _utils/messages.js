@@ -44,6 +44,11 @@ const successMsg = {
     UPDATE: "Card updated succsessfully",
     DELETE: "Card deleted succsessfully",
   },
+  task: {
+    CREATE: "Task created succsessfully",
+    UPDATE: "Task updated succsessfully",
+    DELETE: "Task deleted succsessfully",
+  },
 };
 
 module.exports = {

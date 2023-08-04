@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       // Type {1} -- {1..n} Cards
       Type.hasMany(models.Card, {
         as: "card",
-        foreignKey: "spec_id", //foreignKey of Cards
+        foreignKey: "type_id", //foreignKey of Cards
       });
     }
   }

@@ -16,4 +16,10 @@ router.post("/update-profile", verifyToken, userController.updateProfile);
 /* create card */
 router.post("/create-card", verifyToken, userController.createCard);
 
+/* create task */
+router.post("/create-task", verifyToken, userController.createTask);
+
+/* find user CardsTasks*/
+router.get("/user-cards-tasks", verifyToken, userController.findUserCardsTasks);
+
 module.exports = router;
