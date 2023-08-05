@@ -52,4 +52,12 @@ router.post("/update-card/:id", verifyToken, userController.updateCard);
 /* update my task*/
 router.post("/update-task/:id", verifyToken, userController.updateTask);
 
+//-------------------------------------------------------
+
+/* delete Card */
+router.delete("/delete-card/:id", verifyToken, userController.deleteCard);
+
+/* delete Task */
+router.delete("/delete-task/:id", verifyToken, userController.deleteTask);
+
 module.exports = router;

@@ -11,8 +11,32 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        card_id: 2,
+        card_id: 1,
         task_id: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        card_id: 2,
+        task_id: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        card_id: 2,
+        task_id: 4,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        card_id: 3,
+        task_id: 5,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        card_id: 3,
+        task_id: 6,
         createdAt: new Date(),
         updatedAt: new Date(),
       },

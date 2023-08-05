@@ -24,6 +24,8 @@ module.exports = {
           model: "cards",
           key: "id",
         },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
       },
       task_id: {
         allowNull: false,
@@ -32,6 +34,8 @@ module.exports = {
           model: "tasks",
           key: "id",
         },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
       },
       createdAt: {
         allowNull: false,

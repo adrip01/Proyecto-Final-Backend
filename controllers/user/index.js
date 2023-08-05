@@ -12,5 +12,7 @@ userController.getCard = require("./getCard");
 userController.getTask = require("./getTask");
 userController.updateCard = require("./updateCard");
 userController.updateTask = require("./updateTask");
+userController.deleteCard = require("./deleteCard");
+userController.deleteTask = require("./deleteTask");
 
 module.exports = userController;

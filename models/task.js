@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         through: "CardTask",
         as: "cards",
         foreignKey: "task_id",
+        onDelete: "NO ACTION",
       });
     }
   }

@@ -31,6 +31,17 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
+      {
+        role_id: 2, // user
+        user_name: "pepo3",
+        first_name: "Marta",
+        last_name: "Rivas",
+        email: "marta@rivas.com",
+        password: encryptedPassword,
+        birthday: "1998-05-11",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
     ]);
   },
 

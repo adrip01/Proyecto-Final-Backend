@@ -11,10 +11,12 @@ module.exports = (sequelize, DataTypes) => {
       CardTask.belongsTo(models.Card, {
         as: "cards",
         foreignKey: "card_id",
+        onDelete: "CASCADE",
       });
       CardTask.belongsTo(models.Task, {
         as: "tasks",
         foreignKey: "task_id",
+        onDelete: "CASCADE",
       });
     }
   }
