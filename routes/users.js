@@ -60,4 +60,9 @@ router.delete("/delete-card/:id", verifyToken, userController.deleteCard);
 /* delete Task */
 router.delete("/delete-task/:id", verifyToken, userController.deleteTask);
 
+//-------------------------------------------------------
+
+/* GET all types */
+router.get("/types", verifyToken, userController.getTypes);
+
 module.exports = router;

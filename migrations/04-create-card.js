@@ -16,11 +16,10 @@ module.exports = {
           model: "users",
           key: "id",
         },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE',
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       type_id: {
-        allowNull: false,
         type: Sequelize.INTEGER,
         references: {
           model: "types",

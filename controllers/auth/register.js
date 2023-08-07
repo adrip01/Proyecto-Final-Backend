@@ -9,7 +9,7 @@ const { successMsg, errorMsg } = require("../../_utils/messages");
  * @param {*} res Response object
  */
 module.exports = async (req, res) => {
-  const { first_name, email, password } = req.body;
+  const { user_name, email, password } = req.body;
 
   if (password.lenght < 8) {
     return res.status(400).json({
@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
 
     const newUser = {
       role_id: 2, // role = user
-      first_name,
+      user_name,
       email,
       password: hash,
     };

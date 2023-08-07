@@ -1,5 +1,5 @@
 const { errorMsg, successMsg } = require("../../_utils/messages");
-const { User, Role } = require("../../models");
+const { User, Role, sequelize } = require("../../models");
 
 module.exports = async (req, res) => {
   try {
@@ -17,20 +17,27 @@ module.exports = async (req, res) => {
       });
     }
 
-    const updateUser = await User.update(
-      {
-        user_name: user_name || user.user_name,
-        first_name: first_name || user.first_name,
-        user_last_name: last_name || user.last_name,
-        email: email || user.email,
-        birthday: birthday || user.birthday,
+    const updateValues = {
+      user_name: user_name || user.user_name,
+      first_name: first_name || user.first_name,
+      last_name: last_name || user.last_name,
+      email: email || user.email,
+      birthday: birthday || user.birthday,
+    };
+
+    // // Replace fields with Sequelize.literal('NULL') if they are null in the request
+    // if (user_name === null) updateValues.user_name = sequelize.literal("NULL");
+    // if (first_name === null)
+    //   updateValues.first_name = sequelize.literal("NULL");
+    // if (last_name === null) updateValues.last_name = sequelize.literal("NULL");
+    // if (email === null) updateValues.email = sequelize.literal("NULL");
+    // if (birthday === null) updateValues.birthday = sequelize.literal("NULL");
+
+    const updateUser = await User.update(updateValues, {
+      where: {
+        id: userId,
       },
-      {
-        where: {
-          id: userId,
-        },
-      }
-    );
+    });
 
     updateUser;
 
