@@ -25,14 +25,6 @@ module.exports = async (req, res) => {
       birthday: birthday || user.birthday,
     };
 
-    // // Replace fields with Sequelize.literal('NULL') if they are null in the request
-    // if (user_name === null) updateValues.user_name = sequelize.literal("NULL");
-    // if (first_name === null)
-    //   updateValues.first_name = sequelize.literal("NULL");
-    // if (last_name === null) updateValues.last_name = sequelize.literal("NULL");
-    // if (email === null) updateValues.email = sequelize.literal("NULL");
-    // if (birthday === null) updateValues.birthday = sequelize.literal("NULL");
-
     const updateUser = await User.update(updateValues, {
       where: {
         id: userId,

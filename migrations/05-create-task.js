@@ -16,12 +16,16 @@ module.exports = {
           model: "users",
           key: "id",
         },
-        onUpdate: 'CASCADE',
-        onDelete: 'CASCADE',
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       description: {
         allowNull: false,
         type: Sequelize.STRING,
+      },
+      target_timer: {
+        allowNull: false,
+        type: Sequelize.ENUM("yes", "no"),
       },
       limit_date: {
         type: Sequelize.DATE,

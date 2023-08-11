@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   try {
     let task;
 
-    // getting the apointment by id
+    // getting the task by id
     task = await Task.findOne({ where: { id: taskId } });
 
     if (!task) {

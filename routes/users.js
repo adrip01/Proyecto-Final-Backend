@@ -25,6 +25,9 @@ router.post("/create-card", verifyToken, userController.createCard);
 /* create task */
 router.post("/create-task", verifyToken, userController.createTask);
 
+/* create task by card id*/
+router.post("/create-task/:id", verifyToken, userController.createTaskForCard);
+
 //-------------------------------------------------------
 
 /* find user Cards*/

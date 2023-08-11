@@ -27,6 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       user_id: DataTypes.INTEGER,
       description: DataTypes.STRING,
+      target_timer: DataTypes.ENUM("yes", "no"),
       limit_date: DataTypes.DATE,
       limit_time: DataTypes.TIME,
       is_completed: DataTypes.ENUM("yes", "no"),

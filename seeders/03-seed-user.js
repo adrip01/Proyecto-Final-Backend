@@ -32,7 +32,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        role_id: 2, // user
+        role_id: 2, 
         user_name: "pepo3",
         first_name: "Marta",
         last_name: "Rivas",

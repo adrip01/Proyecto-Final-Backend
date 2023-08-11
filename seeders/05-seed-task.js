@@ -7,6 +7,7 @@ module.exports = {
       {
         user_id: 2,
         description: "lavar los platos",
+        target_timer: "no",
         limit_date: null,
         limit_time: null,
         is_completed: "no",
@@ -16,6 +17,7 @@ module.exports = {
       {
         user_id: 2,
         description: "fregar el piso",
+        target_timer: "no",
         limit_date: null,
         limit_time: null,
         is_completed: "no",
@@ -25,6 +27,7 @@ module.exports = {
       {
         user_id: 2,
         description: "pasear al perro",
+        target_timer: "no",
         limit_date: null,
         limit_time: null,
         is_completed: "no",
@@ -34,6 +37,7 @@ module.exports = {
       {
         user_id: 2,
         description: "dar de comer a los peces",
+        target_timer: "no",
         limit_date: null,
         limit_time: null,
         is_completed: "no",
@@ -43,6 +47,7 @@ module.exports = {
       {
         user_id: 2,
         description: "comprar el pan",
+        target_timer: "no",
         limit_date: null,
         limit_time: null,
         is_completed: "no",
@@ -52,6 +57,7 @@ module.exports = {
       {
         user_id: 2,
         description: "comprar leche",
+        target_timer: "no",
         limit_date: null,
         limit_time: null,
         is_completed: "no",

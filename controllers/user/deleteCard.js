@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   try {
     let card;
 
-    // getting the apointment by id
+    // getting the card by id
     card = await Card.findOne({ where: { id: cardId } });
 
     if (!card) {
