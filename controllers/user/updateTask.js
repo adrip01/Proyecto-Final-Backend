@@ -3,7 +3,8 @@ const { successMsg, errorMsg } = require("../../_utils/messages");
 
 module.exports = async (req, res) => {
   const { userId } = req;
-  const { description, limit_date, limit_time, is_completed } = req.body;
+  const { description, target_timer, limit_date, limit_time, is_completed } =
+    req.body;
   const taskId = req.params.id;
 
   try {
@@ -28,6 +29,7 @@ module.exports = async (req, res) => {
     const updateTask = await Task.update(
       {
         description: description,
+        target_timer: target_timer,
         limit_date: limit_date,
         limit_time: limit_time,
         is_completed: is_completed,
