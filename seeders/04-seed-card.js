@@ -6,7 +6,7 @@ module.exports = {
     await queryInterface.bulkInsert("cards", [
       {
         user_id: 2,
-        type_id: 3,
+        type_id: 4,
         title: "Card 1",
         category: "resettable",
         is_completed: "no",
@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         user_id: 2,
-        type_id: 3,
+        type_id: 4,
         title: "Card 2",
         category: "resettable",
         is_completed: "no",
@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         user_id: 2,
-        type_id: 3,
+        type_id: 4,
         title: "Card 3",
         category: "resettable",
         is_completed: "no",
