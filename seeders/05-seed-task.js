@@ -6,7 +6,7 @@ module.exports = {
     await queryInterface.bulkInsert("tasks", [
       {
         user_id: 2,
-        description: "lavar los platos",
+        description: "Wash the dishes",
         target_timer: "no",
         limit_date: null,
         limit_time: null,
@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         user_id: 2,
-        description: "fregar el piso",
+        description: "Take out the trash",
         target_timer: "no",
         limit_date: null,
         limit_time: null,
@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         user_id: 2,
-        description: "pasear al perro",
+        description: "Go for a short walk",
         target_timer: "no",
         limit_date: null,
         limit_time: null,
@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         user_id: 2,
-        description: "dar de comer a los peces",
+        description: "Do some stretches or light exercises",
         target_timer: "no",
         limit_date: null,
         limit_time: null,
@@ -46,7 +46,7 @@ module.exports = {
       },
       {
         user_id: 2,
-        description: "comprar el pan",
+        description: "Read for at least 15 minutes",
         target_timer: "no",
         limit_date: null,
         limit_time: null,
@@ -56,7 +56,17 @@ module.exports = {
       },
       {
         user_id: 2,
-        description: "comprar leche",
+        description: "Call Mother",
+        target_timer: "no",
+        limit_date: null,
+        limit_time: null,
+        is_completed: "no",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        user_id: 2,
+        description: "Check and respond to emails",
         target_timer: "no",
         limit_date: null,
         limit_time: null,

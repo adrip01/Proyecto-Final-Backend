@@ -7,7 +7,7 @@ module.exports = {
       {
         user_id: 2,
         type_id: 4,
-        title: "Card 1",
+        title: "Home",
         category: "resettable",
         is_completed: "no",
         createdAt: new Date(),
@@ -16,7 +16,7 @@ module.exports = {
       {
         user_id: 2,
         type_id: 4,
-        title: "Card 2",
+        title: "Healthy",
         category: "resettable",
         is_completed: "no",
         createdAt: new Date(),
@@ -25,7 +25,7 @@ module.exports = {
       {
         user_id: 2,
         type_id: 4,
-        title: "Card 3",
+        title: "Self",
         category: "resettable",
         is_completed: "no",
         createdAt: new Date(),

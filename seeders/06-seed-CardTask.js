@@ -40,6 +40,12 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
+      {
+        card_id: 3,
+        task_id: 7,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
     ]);
   },
 
